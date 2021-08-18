@@ -22,10 +22,10 @@ async function main(name = 'projects/my-project/secrets/my-secret/versions/1') {
   // const name = 'projects/my-project/secrets/my-secret/versions/5';
   // const name = 'projects/my-project/secrets/my-secret/versions/latest';
 
-  // Imports the Secret Manager library
+  // Import the Secret Manager client library.
   const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
 
-  // Instantiates a client
+  // Instantiate a client.
   const client = new SecretManagerServiceClient();
 
   async function accessSecretVersion() {
